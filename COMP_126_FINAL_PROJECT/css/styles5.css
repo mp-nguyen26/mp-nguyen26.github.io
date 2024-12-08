@@ -1,0 +1,165 @@
+/* This file was made by Chris Kim */
+* {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+body {
+    height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    background-color: #483d3f;
+    color: white;
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .navbar-nav {
+    display: flex;
+    gap: 1vw;
+    list-style: none;
+}
+
+.navbar-nav li {
+    display: inline;
+}
+
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1vw 2vw;
+}
+
+.navbar-nav a:hover {
+    background-color: #a39a92;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #483d3f;
+    color: white;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    padding: 3vw 0;
+    margin-top: auto;
+}
+ 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    font-family: "Oswald", sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #483d3f;
+    margin-bottom: 20px;
+}
+
+.experience-logo {
+    align-self: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.circle-picture {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #ffffff;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10;
+}
+
+.work-card {
+    width: 90%;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4ebd9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    width: 90%; 
+    margin-bottom: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.body-text {
+    font-size: 1.1rem;
+    max-width: 700px;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    margin-bottom: -50px;
+}
+
+#logos {
+    width: 80px;
+}
+
+#experience {
+    margin-top: 50px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+}
+.resume {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .work-card-container {
+      justify-content: space-between;
+      gap: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .work-card {
+      width: 100%;
+    }
+  
+    .title {
+      font-size: 60px;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+    }
+    .resume {
+        width: 50%;
+        height: auto;
+        padding: 20px;
+    }
+  }

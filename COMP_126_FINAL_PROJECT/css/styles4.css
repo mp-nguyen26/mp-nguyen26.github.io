@@ -1,0 +1,273 @@
+/* This file was made by Chris Kim */
+* {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #483d3f;
+    color: white;
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 1vw;
+    list-style: none;
+}
+
+.navbar-nav li {
+    display: inline;
+}
+
+.navbar-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1vw 2vw;
+}
+
+.navbar-nav a:hover {
+    background-color: #a39a92;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #483d3f;
+    color: white;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    padding: 3vw 0;
+    margin-top: auto;
+}
+
+.website-name {
+    font-size: 24px;
+    color: white;
+}
+
+footer {
+    background-color: #483D3F;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 3vw 0;
+    margin-top: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #483D3F;
+    margin-bottom: 20px;
+}
+
+.experience-logo {
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.circle-picture {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #ffffff;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.work-card {
+    width: 90%;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4ebd9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.body-text {
+    font-size: 1.1rem;
+    max-width: 700px;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    margin-top: 200px;
+}
+
+.kyle-picture img {
+    display: block;
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+}
+
+#logos {
+    width: 80px;
+}
+
+#experience {
+    margin-top: 50px;
+}
+
+.form-container {
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+fieldset {
+    border: 1px solid #A39A92;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input, textarea, select {
+    padding: 10px;
+    border: 1px solid #A39A92;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #058ED9;
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#submit, #cancel {
+    width: 100%;
+}
+
+#submit {
+    background-color: #058ED9;
+}
+
+#cancel {
+    background-color: #FF6961;
+}
+
+button {
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: #483D3F;
+    transform: scale(1.05);
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+   
+
+    .work-card {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .form-container {
+        width: 400px;
+    }
+
+    .buttons {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #submit {
+        width: 50%;
+    }
+
+    #cancel {
+        width: 30%;
+    }
+
+    .image-container img {
+        max-width: 50%;
+        height: auto;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+}
